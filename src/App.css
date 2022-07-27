@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2b2b2b;
+  cursor: text;
+  transition: border-color 0.25s;
+}
+
+.clear-button {
+  color: red;
+}
+
+.nlu-number {
+  color: greenyellow;
+  /* font-weight: bold; */
+  font-size: 28px;
+  padding: 12px;
+}
