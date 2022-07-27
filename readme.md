@@ -13,3 +13,8 @@ A helpful app to quickly reference product NLUs.
 ## Quick Reference
 
 https://javascript.plainenglish.io/fetching-data-with-useeffect-in-react-604ed53edffe
+
+*Why can't I pass my state/handlers as props to sub components?*  
+https://javascript.tutorialink.com/react-hooks-passing-state-prop-is-not-a-function/  
+Answer: Because all props are passed as the **first** argument to the component. I was doing `const Searchbar = (searchString, setSearchString) =>` instead of `const Searchbar = ({searchString, setSearchString}) =>`  
+Just wrap the props in brackets to pass them as a single property.
