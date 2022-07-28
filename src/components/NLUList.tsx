@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import jsonData from '../assets/nlus.json?url';
 
 const Nlulist = ({nlus, setNLUs, filtered, setFiltered, empty, setEmpty, searchString}) => {
   // const [nlus, setNLUs] = useState([]);
@@ -6,7 +7,7 @@ const Nlulist = ({nlus, setNLUs, filtered, setFiltered, empty, setEmpty, searchS
   // const [empty, setEmpty] = useState(true);
 
   useEffect(() => {
-      fetch("../src/nlus.json")
+      fetch(jsonData)
         .then((res) => res.json())
         .then((data) => {
           setNLUs(data);
