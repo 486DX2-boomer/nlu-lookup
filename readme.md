@@ -2,13 +2,16 @@
 
 A helpful app to quickly reference product NLUs
 
+https://murmuring-crag-90337.herokuapp.com/
+
 ## To Do
 - [x] Basic functionality
 - [ ] Get NLU data from an API instead of static JSON
 - [x] ~~Quick clear button changes focus back to searchbar~~ Unnecessary, the search property on the input element already provides this functionality
-- [ ] Deploy to [Heroku](https://vitejs.dev/guide/static-deploy.html#heroku)
-- [ ] QR code displayed in-app for quick sharing
+- [x] Deploy to [Heroku](https://vitejs.dev/guide/static-deploy.html#heroku)
+- [x] QR code displayed in-app for quick sharing
 - [ ] Re-enable strict linting and fix implicit anys
+- [ ] Support [PWA add to home screen](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
 
 ## Quick Reference
 

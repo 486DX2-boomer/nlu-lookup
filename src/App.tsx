@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Searchbar from "./components/Searchbar";
 import Clearbutton from "./components/Clearbutton";
 import NLUList from "./components/NLUList";
+import Qrmodal from "./components/Qrmodal";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Searchbar searchString={searchString} setSearchString={setSearchString}/>
       </div>
       <NLUList nlus={nlus} setNLUs={setNLUs} filtered={filtered} setFiltered={setFiltered} empty={empty} setEmpty={setEmpty} searchString={searchString}/>
+      <Qrmodal />
     </div>
   );
 }
