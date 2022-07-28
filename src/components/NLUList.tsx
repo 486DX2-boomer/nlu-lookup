@@ -31,7 +31,8 @@ const Nlulist = ({nlus, setNLUs, filtered, setFiltered, empty, setEmpty, searchS
 
   return (
     <>
-    { empty && <div className="empty">Search for an NLU...</div> }
+    { empty && <div className="empty">Search by product name, get an NLU</div> }
+    <div className="nlu-list">
       <ul>
         {filtered.map((f) => (
           <li key={f.nlu}>
@@ -39,6 +40,7 @@ const Nlulist = ({nlus, setNLUs, filtered, setFiltered, empty, setEmpty, searchS
           </li>
         ))}
       </ul>
+      </div>
     </>
   );
 };

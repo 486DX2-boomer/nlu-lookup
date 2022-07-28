@@ -9,8 +9,11 @@ A helpful app to quickly reference product NLUs.
 - [ ] Deploy to [Heroku](https://stackoverflow.com/questions/69444225/how-do-i-deploy-to-heroku-using-vite)
 - [ ] QR code displayed in-app for quick sharing
 
-
 ## Quick Reference
+
+My first React app.
+
+I have no idea what I am doing.
 
 https://javascript.plainenglish.io/fetching-data-with-useeffect-in-react-604ed53edffe
 

@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <div className="search-wrapper">
         <Searchbar searchString={searchString} setSearchString={setSearchString}/>
-        <Clearbutton />
       </div>
       <NLUList nlus={nlus} setNLUs={setNLUs} filtered={filtered} setFiltered={setFiltered} empty={empty} setEmpty={setEmpty} searchString={searchString}/>
     </div>
