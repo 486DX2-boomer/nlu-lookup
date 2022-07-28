@@ -18,3 +18,6 @@ https://javascript.plainenglish.io/fetching-data-with-useeffect-in-react-604ed53
 https://javascript.tutorialink.com/react-hooks-passing-state-prop-is-not-a-function/  
 Answer: Because all props are passed as the **first** argument to the component. I was doing `const Searchbar = (searchString, setSearchString) =>` instead of `const Searchbar = ({searchString, setSearchString}) =>`  
 Just wrap the props in brackets to pass them as a single property.
+
+https://devtrium.com/posts/dependency-arrays  
+>The dependency array basically tells the hook to "only trigger when the dependency array changes".

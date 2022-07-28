@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Nlulist = ({nlus, setNLUs, filtered, empty, searchString}) => {
+const Nlulist = ({nlus, setNLUs, filtered, setFiltered, empty, setEmpty, searchString}) => {
   // const [nlus, setNLUs] = useState([]);
   // const [filtered, setFiltered] = useState([]);
   // const [empty, setEmpty] = useState(true);
@@ -13,17 +13,29 @@ const Nlulist = ({nlus, setNLUs, filtered, empty, searchString}) => {
         });
   }, []);
 
-  const filterResults = (search) => {
-    console.log(search);
-  }
+  // Filter the data based on search string
+  useEffect(() => {
+    if (searchString) {
+      const filteredData = nlus.filter((nlu) => {
+        return nlu.name.toLowerCase().includes(searchString.toLowerCase());
+      });
+      setFiltered(filteredData);
+      setEmpty(false);
+      console.log(searchString);
+      console.log(filtered);
+    } else {
+      setFiltered(nlus);
+      setEmpty(true);
+    }
+  },[searchString]);
 
   return (
     <>
     { empty && <div className="empty">Search for an NLU...</div> }
       <ul>
-        {nlus.map((nlus) => (
-          <li key={nlus.nlu}>
-            {nlus.name}<span className="nlu-number">{nlus.nlu}</span>
+        {filtered.map((f) => (
+          <li key={f.nlu}>
+            {f.name}<span className="nlu-number">{f.nlu}</span>
           </li>
         ))}
       </ul>
