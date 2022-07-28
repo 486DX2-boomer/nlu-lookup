@@ -3,10 +3,10 @@
 A helpful app to quickly reference product NLUs.
 
 ## To Do
-- [ ] Basic functionality
+- [x] Basic functionality
 - [ ] Get NLU data from an API instead of static JSON
-- [ ] Quick clear button changes focus back to searchbar
-- [ ] Deploy to [Heroku](https://stackoverflow.com/questions/69444225/how-do-i-deploy-to-heroku-using-vite)
+- [x] ~~Quick clear button changes focus back to searchbar~~ Unnecessary, the search property on the input element already provides this functionality
+- [ ] Deploy to [Heroku](https://vitejs.dev/guide/static-deploy.html#heroku)
 - [ ] QR code displayed in-app for quick sharing
 
 ## Quick Reference
